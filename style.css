@@ -16,9 +16,9 @@ body {
 h1 {
 	font-weight: bold;
 	font-family: 'New Century Schoolbook', serif; 
-	font-size: 24px;
+	font-size: 20px;
 	text-align: left;
-	margin-top: 15px;
+	margin-top: 10px;
 	clear: left;
 	}
 
@@ -36,6 +36,17 @@ h3 {
  	font-size: 18px;
 	text-align: left;
 	}
+
+/* prevent super and subscripts from affecting line height */
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
+}
 
 /*OK, the IDs start here */
 
@@ -135,12 +146,14 @@ h3 {
 
 #bodysec a {	
 	text-decoration: none;
-	color: blue;
+	color: darkgreen;
 	}
 
 #bodysec a:hover, a:active {
-	color: #990000;
-	border-bottom: dotted 1px #990000;
+	<!-- color: #990000;
+	border-bottom: dotted 1px #990000; -->
+        color: indianred;
+        border-bottom: dotted 1px indianred;
 	}
 
 #bodysec p { /*The style for the slogan.*/
